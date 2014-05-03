@@ -15,6 +15,11 @@ namespace FormationASPNetMVC5.Controllers
         {
             string basePath = Server.MapPath("~");
 
+            if (language == null)
+            {
+                return Content(@"{ ""languages"": [ ""en"", ""fr"" ] }");
+            }            
+
             string filePath = string.Format("{0}/Content/CNF_{1}.json", basePath, language);
 
             if (!io.File.Exists(filePath))

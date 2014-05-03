@@ -15,11 +15,11 @@ namespace FormationASPNetMVC5
 
             // routes.IgnoreRoute("Content/{file}.json");
 
-            /*routes.MapRoute(
+            routes.MapRoute(
                 name: "CNF",
                 url: "ChuckNorrisFacts/{language}",
-                defaults: new { controller = "ChuckNorrisFacts", action = "Get" }
-            );*/
+                defaults: new { controller = "ChuckNorrisFacts", action = "Get", language = (string)null }
+            );
         }
     }
 }
