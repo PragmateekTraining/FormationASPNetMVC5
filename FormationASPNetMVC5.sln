@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing", "FormationASPNetM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionnaire.Model", "Questionnaire.Model\Questionnaire.Model.csproj", "{A18DCE43-B7AC-48EC-8D96-59806244B928}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionnaire.Repository", "Questionnaire.Repository\Questionnaire.Repository.csproj", "{7A3E1BB0-366C-47E0-8AB5-53C88BD25B69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A18DCE43-B7AC-48EC-8D96-59806244B928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18DCE43-B7AC-48EC-8D96-59806244B928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18DCE43-B7AC-48EC-8D96-59806244B928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3E1BB0-366C-47E0-8AB5-53C88BD25B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3E1BB0-366C-47E0-8AB5-53C88BD25B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3E1BB0-366C-47E0-8AB5-53C88BD25B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3E1BB0-366C-47E0-8AB5-53C88BD25B69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

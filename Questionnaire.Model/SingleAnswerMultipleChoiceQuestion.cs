@@ -2,6 +2,6 @@
 {
     public class SingleAnswerMultipleChoiceQuestion : MultipleChoiceQuestion
     {
-        public Choice Answer { get; set; }
+        public int Answer { get; set; }
     }
 }
