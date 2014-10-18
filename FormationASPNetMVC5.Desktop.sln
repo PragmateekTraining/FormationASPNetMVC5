@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWINKatanaSample", "OWINKatanaSample\OWINKatanaSample.csproj", "{7A46E524-91F2-4A2F-8AA8-81740784C379}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OWINKatanaMiddlewareSample", "OWINKatanaMiddlewareSample\OWINKatanaMiddlewareSample.csproj", "{3149EB8A-BDEB-46B6-8BEA-96D401F72AEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7A46E524-91F2-4A2F-8AA8-81740784C379}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A46E524-91F2-4A2F-8AA8-81740784C379}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A46E524-91F2-4A2F-8AA8-81740784C379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3149EB8A-BDEB-46B6-8BEA-96D401F72AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3149EB8A-BDEB-46B6-8BEA-96D401F72AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3149EB8A-BDEB-46B6-8BEA-96D401F72AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3149EB8A-BDEB-46B6-8BEA-96D401F72AEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
