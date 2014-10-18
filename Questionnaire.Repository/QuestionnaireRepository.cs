@@ -13,14 +13,18 @@ namespace Questionnaire.Repository
         {
             public string Title { get; set; }
 
-            public string[] QuestiondIDs { get; set; }
+            public string[] QuestionsIDs { get; set; }
         }
 
         private readonly MongoDatabase database;
 
+        private readonly MongoCollection rawQuestionnaires;
+
         public QuestionnaireRepository(MongoDatabase database)
         {
             this.database = database;
+            this.rawQuestionnaires = database.GetCollection<RawQuestionnaire>("questionnaires");
+            this.rawQuestionnaires = database.GetCollection<RawQuestionnaire>("questionnaires");
         }
 
         public IEnumerable<Question> GetQuestionsByTags(params Tag[] tags)
@@ -33,14 +37,26 @@ namespace Questionnaire.Repository
             return null;
         }
 
+        public model.Questionnaire GetQuestionnaireByTitle(string title)
+        {
+            RawQuestionnaire rawQuestionnaire = rawQuestionnaires.FindOneByIdAs<RawQuestionnaire>(title);
+
+            IList<Question> questions = new List<Question>();
+            
+            foreach (string id in rawQuestionnaire.QuestionsIDs)
+            {
+                questions.Add()
+            }
+
+            // model.Questionnaire questionnaire = new Questionnaire
+        }
+
         public void Save(model.Questionnaire questionnaire)
         {
-            MongoCollection rawQuestionnaires = database.GetCollection<RawQuestionnaire>("questionnaires");
-
             RawQuestionnaire rawQuestionnaire = new RawQuestionnaire
             {
                 Title = questionnaire.Title,
-                QuestiondIDs = questionnaire.Questions.Select(q => q.ID).ToArray()
+                QuestionsIDs = questionnaire.Questions.Select(q => q.ID).ToArray()
             };
 
             rawQuestionnaires.Save(rawQuestionnaire);
