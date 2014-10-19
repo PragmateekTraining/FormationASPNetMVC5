@@ -1,0 +1,13 @@
+﻿@model StronglyTypedViews.Models.TimeModel
+
+<h2>TimeView</h2>
+
+<section>
+    <h1>From ViewBag</h1>
+    @ViewBag.Year-@ViewBag.Month-@ViewBag.Day
+</section>
+
+<section>
+    <h1>From Model</h1>
+    @Model.Year-@Model.Month-@Model.Day
+</section>
